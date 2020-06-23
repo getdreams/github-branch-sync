@@ -1,0 +1,24 @@
+name: GitHub Branch Sync
+author: Francesc Esplugas <francesc.esplugas@getdreams.com>
+description: Sync branches
+branding:
+  icon: 'git-branch'
+  color: 'black'
+inputs:
+  source_branch:
+    description: Branch name to sync from
+    required: true
+  destination_branch:
+    description: Branch name to sync to
+    required: true
+  github_token:
+    description: GitHub token secret
+    required: true
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  env:
+    GITHUB_TOKEN: ${{ inputs.github_token }}
+  args:
+    - ${{ inputs.source_branch }}
+    - ${{ inputs.destination_branch }}
