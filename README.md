@@ -14,6 +14,8 @@ A GitHub Action for syncing repository branches using **force push**.
 ```
 # File: .github/workflows/branch-sync.yml
 
+name: Git Branch Sync
+
 on:
   push:
     branches:
