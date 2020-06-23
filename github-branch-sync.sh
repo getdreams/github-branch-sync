@@ -18,6 +18,5 @@ fi
 echo "SOURCE_BRANCH=$SOURCE_BRANCH"
 echo "DESTINATION_BRANCH=$DESTINATION_BRANCH"
 
-git checkout $SOURCE_BRANCH
-git checkout --branch $DESTINATION_BRANCH
+git checkout -B $DESTINATION_BRANCH
 git push origin $DESTINATION_BRANCH --force
