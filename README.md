@@ -16,7 +16,10 @@ A GitHub Action for syncing repository branches using **force push**.
 
 on:
   push:
+    branches:
+    - 'master'
   schedule:
+    # Scheduled workflows run on the latest commit on the default branch
     - cron: "0 0 * * *"
 jobs:
   branch-sync:
