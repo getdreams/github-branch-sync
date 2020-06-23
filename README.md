@@ -12,7 +12,7 @@ A GitHub Action for syncing repository branches using **force push**.
 ### GitHub Actions
 
 ```
-# File: .github/workflows/branch-sync.yml
+# File: .github/workflows/github-branch-sync.yml
 
 name: Git Branch Sync
 
