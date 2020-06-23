@@ -24,7 +24,7 @@ jobs:
     steps:
     - uses: actions/checkout@master
     - name: branch-sync
-      uses: branch-sync/github-sync@v2
+      uses: getdreams/github-branch-sync
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
