@@ -20,6 +20,8 @@ echo "DESTINATION_BRANCH=$DESTINATION_BRANCH"
 
 git config --global --add safe.directory /github/workspace
 
+git fetch --unshallow
+
 git checkout $DESTINATION_BRANCH
 git merge $SOURCE_BRANCH
 git push origin $DESTINATION_BRANCH
