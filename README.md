@@ -1,4 +1,4 @@
-# GitHub Branch Sync
+# DEPRECATED - GitHub Branch Sync
 
 A GitHub Action for syncing repository branches using **force push**.
 
